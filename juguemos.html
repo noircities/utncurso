@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="./multimedia/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Proyecto final</title>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <a href="index.html">
+        <svg id="vector" width="170px" height="80px">
+                <rect id="mon-blanco" x="60px" y="5px" fill="#F0E9D2" width="90px" height="50px" stroke="#F0E9D2" rx="5px"></rect>
+                <rect id="mon-azul" x="72px" y="12px" fill="#495579" stroke="#495579" width="65px" height="35px" rx="5px"></rect>
+                <polygon id="tec-blanco" points="75 63 ,35 80 ,175 80,135 63 " fill="#F0E9D2"></polygon>
+                <polygon id="tec-azul" points="80 66, 50 77, 160 77, 130 66" fill="#495579"></polygon>
+        </svg>
+        </a>
+            <ul>
+                <li><a href="/historia.html">HISTORIA</a></li>
+                <li><a href="#">JUGUEMOS</a></li>
+            </ul>
+    </nav>
+            </header>
+    <div class="banner">
+        <h1>JUGUEMOS UN POCO</h1>
+    </div>
+    <main class="main-juego">
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        <section class="juego">
+            <div class="cajas-juego">
+                <div id="caja1">Arrastre y suelte su imagen aquí</div>
+                <div id="caja2">Arrastre y suelte su imagen aquí</div>
+                <div id="caja3">Arrastre y suelte su imagen aquí</div>
+            </div>
+            <div class="imagenes-juego">
+                <img src="/multimedia/Rompe3.png" id="rompe3">
+                <img src="/multimedia/Rompe2.png" id="rompe2">
+                <img src="/multimedia/Rompe1.png" id="rompe1">
+            </div>
+            <button id="boton-juego" onclick="reiniciar()">Reiniciar</button>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    </body>
+    </html>

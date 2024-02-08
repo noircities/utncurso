@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+#mon-blanco,#tec-blanco{
+    animation: blanco 2s ease-in 0s 1 normal forwards;
+}
+#mon-azul,#tec-azul{
+    animation: azul 3s ease-in 0s 1 normal forwards;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #181c30;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: #E6DDC4;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow:4px 6px #678983;
+}
+
+nav ul li a:active{
+    box-shadow: none;
+}
+
+.banner{
+    background-image:url(/multimedia/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 225px;
+    font-size: 25px;
+    text-shadow:3px 3px gray, 6px 6px black;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:350px;
+    height: 400px;
+    text-align: center;
+    background-color: #e6ddc4;
+    gap: 30px;
+    border: #678983 solid 5px;
+    color: black;
+    margin:200px 70px 200px 70px;
+}
+.tarjeta a{
+        color: white;
+        background-color: #181c30;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 3px 3px #678983;
+        width:35%;
+        text-align: center;
+        margin: auto;
+}
+.main-index{
+    background-color: #181c30;
+}
+
+.main-index h2{
+    text-align: center;
+    color: #678983;
+    font-size: 35px;
+    text-shadow: 3px 3px black;
+}
+
+.main-hist{
+    background-color: #181c30;
+    color: white;
+    padding: 50px;
+}
+
+.main-hist h2{
+    color: #678983;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;  
+}
+
+.main-juego{
+    background-color: #181c30;
+    padding: 100px;
+}
+
+.main-juego h2{
+    color: #678983;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.texto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin: 40px;
+}
+
+.section-video{
+    background-color: #181c30;
+    color: #678983;
+    text-shadow: 2px 2px black;
+    font-size: 25px;
+    padding:100px;
+    text-align: center;
+}
+
+video{
+    width: 100%;
+}
+
+.video-cont{
+    padding: 3px;
+    background-color: black;
+    width: 900px;
+    margin: auto;
+}
+
+.barra-rep{
+    background-color: rgb(59, 59, 59);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.imagenes-juego{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin: 50px;
+}
+
+.cajas-juego{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#caja1,#caja2,#caja3{
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 295px;
+    height: 480px;
+    align-items: center;
+    overflow: hidden;
+}
+#caja1:hover{
+    background-color: rgb(80, 80, 80);
+}
+#caja2:hover{
+    background-color:rgb(80, 80, 80) ;
+}
+#caja3:hover{
+    background-color: rgb(80, 80, 80);
+}
+button{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #e6ddc4;
+    box-shadow: #678983 2px 2px;
+}
+
+#boton-juego{
+    padding: 10px 70px;
+    border-radius: 10px;
+    background-color: #e6ddc4;
+    box-shadow: #678983 2px 2px;
+    display: flex;
+    margin: auto;
+}
+
+footer{
+    background-color:#678983;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: #181c30;
+    font-weight: bold;
+}
+
+footer img{
+    width:100px;
+}
+
+footer span{
+    font-weight: normal;
+}
+
+@keyframes blanco{
+    0%{transform:traslate(0px,-20px);
+        opacity: 0;}
+    50%{transform: translate(0px,-10px);
+        opacity:0;}
+    100%{transform:traslate(0px,0px);
+        opacity:1;
+    }
+}
+
+@keyframes azul {
+    0%{transform:traslate(0px,-20px);
+        opacity: 0;}
+    50%{transform: translate(0px,-10px);
+        opacity:0;}
+    100%{transform:traslate(0px,0px);
+        opacity:1;}
+    }
